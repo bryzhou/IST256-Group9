@@ -1,0 +1,78 @@
+﻿@using System.Security.Claims;
+@using Microsoft.Extensions.Configuration
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IST 256 Final Project: @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="~/css/dotnetCommon.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-nittany mb-3">
+            <div class="container">
+                <a rel="noopener" target="_BLANK" title="Penn State University home page" href="http://www.psu.edu" class="ps-2">
+                    <img alt="Penn State University Logo: Shield with image of a lions head and the text Penn State" src="https://static.apps.psu.edu/img/PSU_HOR_REV_RGB_2C.svg" class="psu-logo">
+                </a>
+                <div class="float-start d-none d-md-block ps-1 fs-4">
+					Store Name
+                </div>
+                <img src="~/images/Vert-Bar.png" aria-hidden="true" class="ps-1 pe-1" />
+                <div class="float-start d-none d-md-block ps-1 fs-5 me-2">
+					Extra<br/>
+					Text Here
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Home" asp-action="Index" asp-area="">Home</a>
+                        </li>
+                    </ul>
+                    <div class="my-2 my-lg-0">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container body-container overflow-auto">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="navbar navbar-dark fixed-bottom bg-nittany text-light">
+        <div class="col-md-3 pl-1 d-none d-md-flex">
+            <a rel="noopener" target="_BLANK" title="Penn State University home page" href="http://www.psu.edu" class="float-start ps-1">
+                <img alt="Penn State University Logo: Shield with image of a lions head and the text Penn State" class="psu-logo" src="https://static.apps.psu.edu/img/PSU_HOR_REV_RGB_2C.svg">
+            </a>
+        </div>
+        <div class="col-12 col-md-5 text-center">
+            
+            <a href="#" class="pl-1" target="_blank">Contact</a>
+            <a href="https://www.psu.edu/web-privacy-statement/" target="_blank" class="pl-1">Privacy</a>
+            <a href="http://www.psu.edu/accessibilitystatement" target="_blank" class="pl-1">Accessibility</a>
+        </div>
+        <div class="col-md-4 text-md-end pe-2 mt-1 mt-md-0 x-small">
+            &copy; Group N IST 256
+            
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/modernizr/modernizr.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

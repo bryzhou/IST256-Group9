@@ -1,0 +1,25 @@
+.nav-link:hover
+{
+    transform: scale(1.0)
+}
+
+.body-container
+{
+    padding-bottom: 60px;
+}
+
+.psu-logo
+{
+    height: 2em;
+}
+
+.border-dashed
+{
+    border-style: dashed;
+    border-width: 3px;
+}
+
+.x-small
+{
+    font-size:.75em;
+}
