@@ -1,0 +1,164 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.Web/Final.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.DAL/Final.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.DAL/Final.DAL.csproj",
+        "projectName": "Final.DAL",
+        "projectPath": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.DAL/Final.DAL.csproj",
+        "packagesPath": "/Users/juanoliver/.nuget/packages/",
+        "outputPath": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/juanoliver/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.Web/Final.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.Web/Final.Web.csproj",
+        "projectName": "Final.Web",
+        "projectPath": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.Web/Final.Web.csproj",
+        "packagesPath": "/Users/juanoliver/.nuget/packages/",
+        "outputPath": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/juanoliver/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.309/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.DAL/Final.DAL.csproj": {
+                "projectPath": "/Users/juanoliver/Desktop/IST256-Group9/FinalProject.DAL/Final.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[1.26.0, )"
+            },
+            "Microsoft.Identity.Web.MicrosoftGraph": {
+              "target": "Package",
+              "version": "[1.26.0, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[1.26.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "NWebsec.AspNetCore.Core": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NWebsec.AspNetCore.Middleware": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
