@@ -280,3 +280,12 @@ table.fixed th {
         opacity: 0;
     }
 }
+.profile-img {
+    width: 200px;
+    height: 200px;
+}
+.card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
