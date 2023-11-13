@@ -1,22 +1,91 @@
-﻿
-@{
-	ViewData["Title"] = "Home Page";
+﻿@{
+    ViewData["Title"] = "Travel Agency Home";
 }
 
-<div>
-	<h1 class="display-4">Your Team</h1>
-	<p>
-		This is your Home Page
-	</p>
-	<div class="row">
-		<div class="col-4">
-			Boot Strap column 1
-		</div>
-		<div class="col-4">
-			Boot Strap column 2
-		</div>
-		<div class="col-4">
-			Boot Strap column 3
-		</div>
-	</div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add your custom styles or additional meta tags here -->
+</head>
+<body>
+
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Wanderwise</h1>
+        <p class="lead">Wander into YOUR next Vacation</p>
+    </header>
+
+    <section class="container mt-4">
+        <h2 class="text-center mb-4">Featured Destinations</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/images/parispic.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h3 class="card-title">Paris, France</h3>
+                        <p class="card-text">Experience the romance of the City of Lights.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/images/tokyopic.jpg" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h3 class="card-title">Tokyo, Japan</h3>
+                        <p class="card-text">Discover the blend of traditional and modern culture.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/images/riopic.jpg" class="card-img-top" alt="Rio de Janeiro">
+                    <div class="card-body">
+                        <h3 class="card-title">Rio de Janeiro, Brazil</h3>
+                        <p class="card-text">Enjoy the vibrant energy of Carnival and beautiful beaches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-4">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Expert Travel Advisors</h3>
+                <p>We have a team of experienced travel advisors ready to assist you in planning your perfect trip.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Customized Itineraries</h3>
+                <p>Our itineraries are tailored to meet your preferences and ensure a personalized travel experience.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Great Value for Your Money</h3>
+                <p>We offer competitive prices and packages to provide you with the best value for your money.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>24/7 Customer Support</h3>
+                <p>Our dedicated customer support is available 24/7 to assist you during your travels.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-4">
+        <p>Contact us to start planning your next adventure!</p>
+        <address>
+            Wanderwise<br />
+            State College, PA 16801<br />
+            Phone: +123-456-7890<br />
+            Email: wanderwise@gmail.com
+        </address>
+    </footer>
+
+    <!-- Include Bootstrap JS and any other required scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<FinalProject.DAL.Models.Category>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+
+
+<div class="bg-light p-5 rounded-lg m-3">
+	<h1 class="display-4">Fake Co.  Categories</h1>
+	<p class="lead">Select from the categories below to view our delicious imported goodies</p>
+	<hr class="my-4">
+	<p>More text could go here that would be useful for an end user</p>
+	<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+<div class="row">
+	@foreach (var item in Model)
+	{
+		<div class="card m-1" style="width: 18rem;padding:0">
+			<img src="https://placehold.co/50x50" alt="placeholder image" />
+			<div class="card-body">
+				<h5 class="card-title">@item.CategoryName</h5>
+				<p class="card-text">@item.Description.</p>
+			</div>
+			<div class="card-footer btn-group">
+				<a href="#" class="btn btn-primary">
+					View Items
+				</a>
+
+			</div>
+		</div>
+	}
+</div>
