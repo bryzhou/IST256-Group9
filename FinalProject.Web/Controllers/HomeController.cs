@@ -10,6 +10,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using System.Text;
 using System.Linq;
+using FinalProject.DAL.Repositories;
 
 namespace FinalProject.Web.Controllers
 {
@@ -21,7 +22,7 @@ namespace FinalProject.Web.Controllers
 		private readonly ILogger<HomeController> logger;
 		private readonly IMailService mailService;
 		private readonly IConfiguration config;
-
+private readonly AdventureWorksRepository repo;
 		/// <summary>
 		/// controller for home page
 		/// </summary>
@@ -30,11 +31,13 @@ namespace FinalProject.Web.Controllers
 		/// <param name="logger">Logger to log errors and such</param>
 		public HomeController(IMailService mailService, 
 			IConfiguration config, 
-			ILogger<HomeController> logger)
+			ILogger<HomeController> logger,
+			AdventureWorksRepository repo)
 		{
 			this.mailService = mailService;
 			this.logger = logger;
 			this.config = config;
+			this.repo = repo;
 		}
 
 		/// <summary>
@@ -44,8 +47,8 @@ namespace FinalProject.Web.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			
-			return View();
+			var model = repo.GetAllCategories();
+			return View(model);
 		}
 
 public IActionResult About()

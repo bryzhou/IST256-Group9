@@ -1,10 +1,14 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "0bFldKzabYyhQQlHW/u72IN5cot2CpSDYDRE4uOLPucoUAXlONZZ3A/330DSPUi9xzYj9zpEbcofkOG04hAKaA==",
 =======
   "dgSpecHash": "l3cgHpHCoel2ICh2RhcdBECLoBX/B99wlOuv17JK/roC1XyjTnxf5Y49Fj4oKOux3GEkmuJv+l4Y1V54FttfjA==",
 >>>>>>> 4377585 (new commit)
+=======
+  "dgSpecHash": "0bFldKzabYyhQQlHW/u72IN5cot2CpSDYDRE4uOLPucoUAXlONZZ3A/330DSPUi9xzYj9zpEbcofkOG04hAKaA==",
+>>>>>>> e8cfe77 (API link)
   "success": true,
   "projectFilePath": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9-1/FinalProject.Web/Final.Web.csproj",
   "expectedPackageFiles": [
