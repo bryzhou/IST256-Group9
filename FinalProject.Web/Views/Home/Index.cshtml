@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Category>
+@{
     ViewData["Title"] = "Travel Agency Home";
 }
 
@@ -16,6 +17,11 @@
         <h1 class="display-4">Welcome to Wanderwise</h1>
         <p class="lead">Wander into YOUR next Vacation</p>
     </header>
+
+@foreach(var item in Model)
+{
+    <div>@item.Description</div>
+}
 
     <section class="container mt-4">
         <h2 class="text-center mb-4">Featured Destinations</h2>

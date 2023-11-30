@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9/FinalProject.DAL/Final.DAL.csproj": {}
+    "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9-1/FinalProject.DAL/Final.DAL.csproj": {}
   },
   "projects": {
-    "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9/FinalProject.DAL/Final.DAL.csproj": {
+    "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9-1/FinalProject.DAL/Final.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9/FinalProject.DAL/Final.DAL.csproj",
+        "projectUniqueName": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9-1/FinalProject.DAL/Final.DAL.csproj",
         "projectName": "Final.DAL",
-        "projectPath": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9/FinalProject.DAL/Final.DAL.csproj",
+        "projectPath": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9-1/FinalProject.DAL/Final.DAL.csproj",
         "packagesPath": "/Users/bryanzhou/.nuget/packages/",
-        "outputPath": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9/FinalProject.DAL/obj/",
+        "outputPath": "/Users/bryanzhou/Desktop/School/IST256/git/IST256-Group9-1/FinalProject.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bryanzhou/.nuget/NuGet/NuGet.Config"
