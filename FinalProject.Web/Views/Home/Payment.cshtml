@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Payment";
+}
+
+<div class="container mt-4">
+    <h2>Payment Information</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <h3>Payment Methods</h3>
+            <p>We accept the following payment methods:</p>
+            <ul>
+                <li>Credit Cards (Visa, MasterCard, American Express)</li>
+                <li>PayPal</li>
+                <li>Apple Pay</li>
+                <!-- Add more payment methods if applicable -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3>Billing Information</h3>
+            <p>Please ensure your billing information matches the details associated with your payment method to avoid any issues with your order.</p>
+            
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number">
+                </div>
+                <div class="mb-3">
+                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3>Security</h3>
+            <p>Your payment and personal information are secure. We use industry-standard security protocols to ensure your data is protected.</p>
+        </div>
+    </div>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3>Refund Policy</h3>
+            <p>Our refund policy allows for returns within 30 days of the purchase date. Please refer to our <a href="/refund-policy">refund policy</a> for more details.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Add Bootstrap CSS and JS references as needed -->
