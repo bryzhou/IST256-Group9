@@ -56,6 +56,10 @@ public IActionResult About()
 	return View();
 }
 
+public IActionResult Payment()
+{
+	return View();
+}
 		/// <summary>
 		/// Privacy page end point
 		/// </summary>
