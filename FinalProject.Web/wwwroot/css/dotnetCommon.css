@@ -289,3 +289,9 @@ table.fixed th {
     height: 30vw;
     object-fit: cover;
 }
+
+.category-image {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
