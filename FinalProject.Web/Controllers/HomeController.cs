@@ -60,6 +60,13 @@ public IActionResult Payment()
 {
 	return View();
 }
+
+public IActionResult Store()
+{
+	var model = repo.GetAllCategories();
+	return View(model);
+	return View();
+}
 		/// <summary>
 		/// Privacy page end point
 		/// </summary>

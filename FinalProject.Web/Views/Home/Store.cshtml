@@ -1,0 +1,30 @@
+@model IEnumerable<FinalProject.DAL.Models.Category>
+
+@{
+    ViewData["Title"] = "Store";
+}
+
+
+<div class="bg-light p-5 rounded-lg m-3">
+	<h1 class="display-4">Wanderwise Pantry Categories</h1>
+	<p class="lead">Select from the categories below to view our delicious imported goodies</p>
+	<hr class="my-4">
+</div>
+
+    <div class="row">
+	    @foreach (var item in Model)
+	    {
+		    <div class="card m-1" style="width: 18rem;padding:0">
+			    <img src = @item.Image alt= "Category" + @item.CategoryId/>
+			    <div class="card-body">
+				    <h5 class="card-title">@item.CategoryName</h5>
+				    <p class="card-text">@item.Description.</p>
+			    </div>
+			    <div class="card-footer btn-group">
+				  <a href= "@Url.Action("Payment", "HomeController")" class="btn btn-primary">
+					Purchase
+				</a>
+			    </div>
+		    </div> 
+	    }
+    </div>
